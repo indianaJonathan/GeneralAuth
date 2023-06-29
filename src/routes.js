@@ -3,6 +3,7 @@ const express = require('express');
 
 //Controllers
 const users = require('./controllers/UserController');
+const auth = require('./controllers/AuthController');
 
 const router = express.Router();
 
@@ -15,5 +16,11 @@ router.post('/user', users.store); // Create user
 router.put('/user', users.update); // Update user
 router.delete('/user', users.delete); // Delete user
 router.put('/user/restore', users.restore); // Restore deleted user
+
+// Login
+router.post('/login', auth.login); // Login
+router.get('/me', auth.me); // Get user information by token
+router.post('/user/password/forgot', auth.forgot_password); // Get password reset token
+router.put('/user/password/reset', auth.reset_password); // Update user password
 
 module.exports = router;
