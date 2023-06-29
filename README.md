@@ -1,7 +1,7 @@
 # General Auth
 ## Simple authentication app
 
-This app uses Node.JS to authenticate your app<a name="footnote"><sup>1</sup></a>.
+This app uses Node.JS to authenticate your app.<a name="footnote"><sup>1</sup></a>
 
 ### Features
 - Create user
@@ -87,4 +87,4 @@ npm run dev
 npm run start
 ```
 
-<sup>[1](#myfootnote1)</sup>Created by Jonathan Hermam
+<sup>[1](#footnote)</sup>Created by Jonathan Hermam
