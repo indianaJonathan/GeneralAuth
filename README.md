@@ -82,9 +82,12 @@ npx sequelize db:seed:all
 ```
 npm run dev
 ```
-
+or
 ```
 npm run start
 ```
+
+### Default user: `admin`
+### Default password: `admin`
 
 <a name="footnote">Created by Jonathan Hermam</a>
