@@ -24,7 +24,10 @@
     "sequelize-cli": "^6.6.1"
   },
   "devDependencies": {
-    "nodemon": "^1.14.9",
+    "nodemon": "^2.0.22",
     "path": "^0.12.7"
+  },
+  "overrides": {
+    "semver": "~7.5.3"
   }
 }
