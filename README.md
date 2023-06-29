@@ -1,7 +1,7 @@
 # General Auth
 ## Simple authentication app
 
-This app uses Node.JS to authenticate your app.[^1]
+This app uses Node.JS to authenticate your app<a name="footnote"><sup>1</sup></a>.
 
 ### Features
 - Create user
@@ -34,43 +34,57 @@ This app uses Node.JS to authenticate your app.[^1]
 
 ## Getting started
 Download the repository and install dependencies
-> npm install
+```
+npm install
+```
 
 Setup the .ENV file
-> #Database <br>
-> SEQUELIZE_DATABASE=<YOUR_DATABASE_NAME (default project uses generalauth)> <br>
-> SEQUELIZE_DIALECT=<YOUR_DATABASE_DIALECT (default project uses mysql)> <br>
-> SEQUELIZE_HOST=<YOUR_DATABASE_HOST (in dev mode use "localhost")> <br>
-> SEQUELIZE_PORT=<YOUR_DATABASE_PORT> <br>
-> SEQUELIZE_USER=<YOUR_DATABASE_USER> <br>
-> SEQUELIZE_PASS=<YOUR_DATABASE_PASSWORD> <br>
-> <br>
-> #BCrypt <br>
-> BCRYPT_SALT=12 <br>
-> <br>
-> #JsonWebToken <br>
-> JWT_SECRET=<YOUR_JET_SECRET> <br>
-> <br>
-> #Mailer <br>
-> MAILER_PROVIDER=<YOUR_EMAIL_PROVIDER> <br>
-> MAILER_ADDRESS=<YOUR_EMAIL_ADDRESS> <br>
-> MAILER_PASS=<YOUR_EMAIL_PASSWORD> <br>
-> <br>
-> #App <br>
-> APP_PORT=3333 <br>
+```
+# Database
+SEQUELIZE_DATABASE=<YOUR_DATABASE_NAME (default project uses generalauth)>
+SEQUELIZE_DIALECT=<YOUR_DATABASE_DIALECT (default project uses mysql)>
+SEQUELIZE_HOST=<YOUR_DATABASE_HOST (in dev mode use "localhost")>
+SEQUELIZE_PORT=<YOUR_DATABASE_PORT>
+SEQUELIZE_USER=<YOUR_DATABASE_USER>
+SEQUELIZE_PASS=<YOUR_DATABASE_PASSWORD>
+
+# BCrypt
+BCRYPT_SALT=12
+
+# JsonWebToken
+JWT_SECRET=<YOUR_JET_SECRET>
+
+# Mailer
+MAILER_PROVIDER=<YOUR_EMAIL_PROVIDER>
+MAILER_ADDRESS=<YOUR_EMAIL_ADDRESS>
+MAILER_PASS=<YOUR_EMAIL_PASSWORD>
+
+# App
+APP_PORT=3333
+```
 
 Run the **"create database"** command
-> npx sequelize db:create
+```
+npx sequelize db:create
+```
 
 Run the **migrations** to setup tables
-> npx sequelize db:migrate
+```
+npx sequelize db:migrate
+```
 
 Run the **seeds** to add primary data
-> npx sequelize db:seed:all
+```
+npx sequelize db:seed:all
+```
 
 ### **You are ready to go**
-> npm run dev
+```
+npm run dev
+```
 
-> npm run start
+```
+npm run start
+```
 
-[^1] Created by Jonathan Hermam
+<sup>[1](#myfootnote1)</sup>Created by Jonathan Hermam
